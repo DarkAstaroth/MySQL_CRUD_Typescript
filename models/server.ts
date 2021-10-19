@@ -29,6 +29,7 @@ class Server {
       await db.authenticate;
       console.log("Base de datos online");
     } catch (error) {
+      console.log(error);
       throw new Error();
     }
   }
